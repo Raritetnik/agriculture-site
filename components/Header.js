@@ -14,7 +14,7 @@ export default function Header({ urlBackground }) {
                 >100$ Natural Food</h6>
                 <h1 className="font-black py-5"
                 style={{ fontSize: "var(--text-size_h1)", lineHeight: '4.5rem' }}>Choose the best healthier way of life</h1>
-                <Button name='Explore Now' color='var(--color-yellow)'/>
+                <Button name='Explore Now' colorBG='var(--color-yellow)' colorTXT='var(--color-blueDark)'/>
             </section>
         </header>
     )

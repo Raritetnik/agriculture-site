@@ -1,10 +1,11 @@
 import {BsFillArrowRightCircleFill} from "react-icons/bs"
 
-export default function Button({name, color}) {
+export default function Button({name, colorBG, colorTXT}) {
     return(
         <button
         style={{
-            backgroundColor: color
+            backgroundColor: colorBG,
+            color: colorTXT
         }}
         className="p-7 rounded-2xl flex items-center font-semibold">
         {name}
