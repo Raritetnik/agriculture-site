@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 
 import Header from '../components/Header'
 import Button from '../components/Button'
+import ListeProduits from '../components/ListeProduits'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -72,7 +72,23 @@ export default function Home() {
         <img className='relative object-cover ' src="./assets/home/about.png" alt="" />
       </section>
 
-      <section className='section '></section>
+      <section className='section'>
+        <div className='mx-52'>
+          <header className='flex flex-col items-center pt-28 pb-7'>
+            <h6 className=''
+              style={{ color: 'var(--color-green)',
+              fontSize: 24,
+              fontWeight: 'bold',
+              fontStyle: 'italic',
+              fontFamily: 'Yellowtail'}}>
+                Categories</h6>
+
+            <h3 className="font-black pb-3"
+              style={{ fontSize: "var(--text-size_h3)", lineHeight: '3rem', maxWidth: '20ch'}}>Our Products</h3>
+          </header>
+          <ListeProduits />
+        </div>
+      </section>
       </main>
     </>
   )
